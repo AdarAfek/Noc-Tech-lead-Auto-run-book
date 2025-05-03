@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     fetchItems() {
-      fetch('https://biuqqcxve2.execute-api.us-west-1.amazonaws.com/dev/cloud_operations_ci_scan_table')
+      fetch('')
         .then(response => response.json())
         .then(data => {
           this.items = data
@@ -63,7 +63,7 @@ export default {
         })
     },
     updateItem(updatedItem) {
-      fetch('https://biuqqcxve2.execute-api.us-west-1.amazonaws.com/dev/cloud_operations_ci_update_item', {
+      fetch('', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

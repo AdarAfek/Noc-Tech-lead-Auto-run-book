@@ -62,7 +62,7 @@ const ResourceManager = () => {
     setInstances([]);
     try {
       const response = await axios.get(
-        "https://biuqqcxve2.execute-api.us-west-1.amazonaws.com/dev/getinstances",
+        "",
         {
           params: {
             region,
@@ -118,7 +118,7 @@ const ResourceManager = () => {
 
     try {
       await axios.post(
-        "https://77eyquhiz1.execute-api.us-west-1.amazonaws.com/dev/reboot",
+        "",
         {}, 
         {
           params: {
