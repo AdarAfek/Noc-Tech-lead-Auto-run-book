@@ -100,11 +100,11 @@ def get_worker_node_instance_ids(cluster_id, eks_client, ec2_client):
 def get_rds_connection():
     try:
         return pymysql.connect(
-            host='noc-logs-11.czran5pf1c9k.us-west-1.rds.amazonaws.com',
-            user='admin'
-            password='Yuli243651!',
-            database='logs',
-            port=3306
+            host='',
+            user=''
+            password='',
+            database='',
+            port=
         )
     except Exception as e:
         logger.error(f"Failed to connect to the database: {e}")
